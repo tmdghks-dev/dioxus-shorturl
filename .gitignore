@@ -1,0 +1,7 @@
+/target
+/dist
+.env
+.DS_Store
+.wrangler
+node_modules
+/cloudflare/public

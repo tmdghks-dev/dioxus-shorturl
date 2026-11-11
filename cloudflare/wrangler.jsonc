@@ -1,0 +1,18 @@
+{
+  "$schema": "../node_modules/wrangler/config-schema.json",
+  "name": "dioxus-shorturl",
+  "main": "src/index.js",
+  "compatibility_date": "2026-10-01",
+  "workers_dev": true,
+  "preview_urls": false,
+  // Dioxus web bundle (wasm/js/css), copied by build-assets.sh. index.html is excluded so
+  // "/" falls through to the Worker and is server-rendered by the Railway backend.
+  "assets": {
+    "directory": "./public",
+    "html_handling": "none",
+    "not_found_handling": "none"
+  },
+  "vars": {
+    "BACKEND_URL": "https://dioxus-shorturl-production.up.railway.app"
+  }
+}

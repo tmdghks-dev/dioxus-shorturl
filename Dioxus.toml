@@ -1,0 +1,5 @@
+[application]
+name = "shorturl"
+
+[web.app]
+title = "숫자형 단축 URL"
